@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<h1>Home Page</h1>
+<p>
+    {% for Hello in range(0,10) %}
+        <p>Hello</p>
+    {% endfor %}
+    {{ content }}
+    {% for i in range(15) %}
+        {% if i%2==0 %}
+            <p>{{i}}</p>
+        {% endif %}
+    {% endfor %}
+    {% for x in content %}
+        <p>{{x}}</p>
+    {% endfor %}
+</p>
+</body>
+</html>
